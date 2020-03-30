@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-2020",
+  "version": "1.0.0",
+  "description": "Portfolio Stefan 2020",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w dist/scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanYYC/StefanYY-PortfolioStefan2020.git"
+  },
+  "author": "Stefan Speter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StefanYYC/StefanYY-PortfolioStefan2020/issues"
+  },
+  "homepage": "https://github.com/StefanYYC/StefanYY-PortfolioStefan2020#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
