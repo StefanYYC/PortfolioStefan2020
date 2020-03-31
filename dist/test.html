@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/homepage.css" rel="stylesheet">
+    <link href="./css/scrollbar.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -15,35 +15,38 @@
 </head>
 
 <body>
-    <a href="./test.html">test</a>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1>sdsss</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat corporis illum alias omnis
-                    reiciendis sint necessitatibus? Beatae, minus odio repudiandae voluptatum quaerat similique dolore
-                    velit possimus neque molestiae illo ipsum.
-                </p>
-            </div>
-        </div>
-    </div>
+    <nav class="navbar">
+        <div class="progress-bar"></div>
+        <div class="progress-bar--increment"></div>
+          <ul>
+              <li><a href="#top">Header</a></li>
+              <li><a href="#article-1"><span class="progress-bar--circle"></span>Article 1</a></li>
+              <li><a href="#article-2"><span class="progress-bar--circle"></span>Article 2</a></li>
+              <li><a href="#article-3"><span class="progress-bar--circle"></span>Article 3</a></li>
+          </ul>
+        </nav>
     
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-                <h1>sdsss</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat corporis illum alias omnis
-                    reiciendis sint necessitatibus? Beatae, minus odio repudiandae voluptatum quaerat similique dolore
-                    velit possimus neque molestiae illo ipsum.
-                </p>
-            </div>
-        </div>
-    </div>
-
-
+        <header id="top">
+          <h1>Welcome to the top!</h1>
+        </header>
+    
+        <main>
+          <article class="article" id="article-1">
+            <h2>Article 1</h2>
+          </article>
+    
+          <article class="article" id="article-2">
+            <h2>Article 2</h2>
+          </article>
+    
+          <article class="article" id="article-3">
+            <h2>Article 3</h2>
+          </article>
+        </main>
+    
+        <footer id="bottom">
+          <h3>Welcome to the bottom!</h3>
+        </footer>
 
 
 
