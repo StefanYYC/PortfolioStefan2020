@@ -85,3 +85,7 @@ article {
 footer {
   height: 500px;
   width: 100%; }
+
+body {
+  background-image: linear-gradient(to right, #36b1f2, #4ba1e9, #5e91dd, #6d81ce, #7970bc, #8664ad, #90589c, #964c89, #9d4476, #a03f62, #9e3c4f, #983d3d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
