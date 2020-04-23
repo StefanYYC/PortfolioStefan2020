@@ -1,6 +1,11 @@
 .presentation {
   height: 100vh; }
 
+h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+  color: #DEF2F1; }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -30,7 +35,7 @@ body {
 
 /* colors background */
 .color-grey1 {
-  background-color: #b2b2b2; }
+  background-color: #2B7A78; }
 
 .color-grey2 {
-  background-color: #cccccc; }
+  background-color: #3AAFA9; }
