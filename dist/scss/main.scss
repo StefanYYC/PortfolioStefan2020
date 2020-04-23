@@ -1,10 +1,12 @@
 @import 'presentation';
+@import 'config';
 
 *{
   margin:0px;
   padding:0px;
-  
+
 }
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -35,8 +37,8 @@ body {
 
 /* colors background */
 .color-grey1{
-  background-color: #b2b2b2;
+  background-color: $bleuvert;
 }
 .color-grey2{
- background-color: #cccccc;
+ background-color: $bleuclair;
 }
