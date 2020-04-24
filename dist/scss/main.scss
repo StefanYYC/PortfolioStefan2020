@@ -1,5 +1,6 @@
 @import 'presentation';
 @import 'config';
+@import 'transition';
 
 *{
   margin:0px;
@@ -23,6 +24,7 @@ body {
 .myNavbar{
   height: 80px;
   color:transparent;
+  visibility: hidden;
 }
 
 .fa-twitter:hover{
