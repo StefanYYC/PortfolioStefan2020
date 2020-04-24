@@ -38,7 +38,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #242f3f;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -58,6 +57,7 @@
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in; }
 
+/* rotation loader */
 @keyframes loader {
   0% {
     transform: rotate(0deg); }
@@ -70,6 +70,7 @@
   100% {
     transform: rotate(360deg); } }
 
+/* remplissage cube */
 @keyframes loader-inner {
   0% {
     height: 0%; }
@@ -103,7 +104,7 @@ body {
   color: transparent;
   animation: fadeIn 1s ease-in both; }
 
-/* Pour la navbar qui arrive de haut en bas après 1s */
+/* Pour la navbar qui arrive de haut en bas après le loading */
 @keyframes fadeIn {
   from {
     opacity: 0;
