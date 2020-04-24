@@ -23,8 +23,22 @@ body {
 
 .myNavbar{
   height: 80px;
+  display: none;
   color:transparent;
-  visibility: hidden;
+  animation: fadeIn 1s ease-in both;
+}
+
+ /* Pour la navbar qui arrive de haut en bas après le loading */
+
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .fa-twitter:hover{
