@@ -8,4 +8,3 @@ setTimeout(function(){
     $('.title').css("display","inline");
 },1700);
 
- 
