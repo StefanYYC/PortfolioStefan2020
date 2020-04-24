@@ -1,13 +1,11 @@
-$(document).ready(function() {
- 
-    setTimeout(function(){
-        $(".loader-wrapper").fadeOut("slow");
-        $(".myNavbar").css("visibility","visible");
-        $('body').css('overflow-y','visible');
-    }, 3000);
+setTimeout(function(){
+    $(".loader-wrapper").fadeOut("slow");
+    $('body').css('overflow-y','visible');
+}, 1500);
 
-    setTimeout(function(){
-        $('.title').css("display","inline");
-    },3500);
+setTimeout(function(){
+    $(".myNavbar").css("display","flex");
+    $('.title').css("display","inline");
+},1700);
+
  
-});
