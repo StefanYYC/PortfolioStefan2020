@@ -14,3 +14,19 @@ var animation_0to100 = bodymovin.loadAnimation({
     loop: true,
     name: 'Icone dynamique'
 })
+var animation_books = bodymovin.loadAnimation({
+    container: document.getElementById('animation-books'),
+    path: './json/books.json',
+    renderer:'svg',
+    autoplay: false,
+    loop: false,
+    name: 'Icone dynamique'
+})
+// Je contrôle la valeur du scroll pour faire apparaître l'anim
+// uniquement quand l'user a assez scroll
+$(document).on('scroll', function() {
+   // console.log($(document).scrollTop());
+    if($(document).scrollTop() > 1097 ){
+        animation_books.play();
+    }
+})
