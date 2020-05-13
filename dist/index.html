@@ -24,9 +24,11 @@
 
     <!-- Animation loading page -->
     <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
+        <div id="animation-loader"></div>
+        <!-- <span class="loader"><span class="loader-inner"></span></span> -->
     </div>
 
+    <!-- wrap all the page -->
     <div class="content">
         <!-- Début navbar -->
         <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light myNavbar">
@@ -60,10 +62,16 @@
         <!-- Fin navbar-->
 
         <!-- Page d'accueil -->
-        <div class="container colors" data-color="grey1">
+        <div class="container colors visibility-hidden" data-color="grey1">
             <div class="row presentation justify-content-center align-items-center">
-                <div class="col-md-12 text-center">
+                <div class="col-md-6 text-center">
                     <h1 class="title" data-aos="fade-up">Stefan Speter</h1>
+                    <div class="line-animation"></div>
+                    <h2 class="sous-titre">21, Junior Web Developer <br> & Flutter Enthusiast </h2>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img class="img-presentation" src="./img/stefan.jpg"
+                        alt="stefan speter portfolio image de présentation">
                 </div>
             </div>
         </div>
@@ -71,20 +79,20 @@
 
         <!-- Thread -->
         <div class="section2 colors" data-color="grey2">
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center" data-aos="fade-up">
-                        <h2>Bienvenue sur mon portfolio !</h2>
-                        <p>
-                            Je m'appelle Stefan, j'ai 21 ans et je suis développeur web et mobile.
-                        </p>
+                        <h2 class="description-title">A propos de moi</h2>
                     </div>
                 </div>
             </div>
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6"></div>
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div id="animation-0to100"></div>
+                    </div>
                     <div class="col-md-6 bloc-droite" data-aos="fade-left">
                         <h2>En ce moment</h2>
                         <p>
@@ -202,6 +210,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+        <script src="./script/lottie.js"></script>
+        <script src="./script/animation_lottie.js"></script>
+    <script src="./script/anime.min.js"></script>
+    <script src="./script/anime.js"></script>
     <script src="./script/style.js"></script>
     <script src="./script/transition.js"></script>
     <script src="./script/aos.js"></script>
