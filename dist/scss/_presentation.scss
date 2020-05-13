@@ -1,14 +1,21 @@
 @import "config";
 
+.visibility-hidden{
+  visibility: hidden;
+}
 .presentation {
   height: 100vh;
 }
-
+h2.sous-titre{
+  color: $bleufonce;
+  font-weight: bold;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 .title {
   text-transform: uppercase;
   font-size: 100px;
-  color: $bleublanc;
   display: none;
+  color: $bleublanc;
   -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -39,4 +46,17 @@
     filter: blur(0px);
     opacity: 1;
   }
+}
+
+.img-presentation{
+  height: 50%;
+  width: 50%;
+  border-radius: 70%;
+}
+
+.line-animation{
+  margin: 2vh;
+  width: 100%;
+  border: 3px solid white;
+  
 }
