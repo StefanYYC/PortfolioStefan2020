@@ -5,4 +5,5 @@ Color scheme : https://github.com/StefanYYC/PortfolioStefan2020/blob/master/dist
 JS librairies : 
 <ul>
   <li>For smooth fade-left and right https://michalsnik.github.io/aos/ </li>
+  <li>For the animation I used https://lottiefiles.com/ </li>
 </ul>
