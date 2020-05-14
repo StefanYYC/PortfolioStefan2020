@@ -22,11 +22,25 @@ var animation_books = bodymovin.loadAnimation({
     loop: false,
     name: 'Icone dynamique'
 })
+
+
+var animation_skills = bodymovin.loadAnimation({
+    container: document.getElementById('animation-skills'),
+    path: './json/skills.json',
+    renderer:'svg',
+    autoplay: false,
+    loop: true,
+    name: 'Icone dynamique'
+})
+
 // Je contrôle la valeur du scroll pour faire apparaître l'anim
 // uniquement quand l'user a assez scroll
 $(document).on('scroll', function() {
-   // console.log($(document).scrollTop());
-    if($(document).scrollTop() > 1097 ){
-        animation_books.play();
-    }
-})
+    //console.log($(document).scrollTop()); // donne la valeur du scroll 
+     if($(document).scrollTop() > 1097 ){
+         animation_books.play();
+     }
+     if($(document).scrollTop() > 1400){
+        animation_skills.play();
+     }
+ });
