@@ -55,8 +55,44 @@ h2.sous-titre{
 }
 
 .line-animation{
-  margin: 2vh;
   width: 100%;
-  border: 3px solid white;
+  margin: 20px;
+  height: 5px;
+  background-color: rgba(white, 0.1);
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(white, 0) 0%,
+      #009fb7 80%,
+      #009fb7 100%
+    );
+    animation: move 5s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.68, 1, 0.68, 1);
+  }
   
+}
+
+@keyframes move {
+  0% {
+    left: -40%;
+  }
+
+  100% {
+    left: 80%;
+  }
+}
+.icon-wrap{
+  position: relative;
+  top: 90px;
+}
+
+.icon{
+  margin: 20px;
+  height: 50px;
 }
