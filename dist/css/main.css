@@ -139,9 +139,9 @@ h2.description-title {
   height: 500px;
   width: 100%; }
 
-* {
-  margin: 0px;
-  padding: 0px; }
+#animation-skills {
+  height: 500px;
+  width: 100%; }
 
 body {
   font-family: 'Roboto', sans-serif;
