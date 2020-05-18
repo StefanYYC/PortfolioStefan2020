@@ -1,6 +1,6 @@
 var animation_loading = bodymovin.loadAnimation({
     container: document.getElementById('animation-loader'),
-    path: './json/loading.json',
+    path: './dist/json/loading.json',
     renderer:'svg',
     autoplay: true,
     loop: true,
@@ -8,7 +8,7 @@ var animation_loading = bodymovin.loadAnimation({
 })
 var animation_0to100 = bodymovin.loadAnimation({
     container: document.getElementById('animation-0to100'),
-    path: './json/informations.json',
+    path: './dist/json/informations.json',
     renderer:'svg',
     autoplay: true,
     loop: true,
@@ -16,7 +16,7 @@ var animation_0to100 = bodymovin.loadAnimation({
 })
 var animation_books = bodymovin.loadAnimation({
     container: document.getElementById('animation-books'),
-    path: './json/books.json',
+    path: './dist/json/books.json',
     renderer:'svg',
     autoplay: false,
     loop: false,
@@ -26,7 +26,7 @@ var animation_books = bodymovin.loadAnimation({
 
 var animation_skills = bodymovin.loadAnimation({
     container: document.getElementById('animation-skills'),
-    path: './json/skills.json',
+    path: './dist/json/skills.json',
     renderer:'svg',
     autoplay: false,
     loop: true,
