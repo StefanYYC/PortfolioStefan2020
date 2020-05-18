@@ -19,3 +19,28 @@ var myPolymorph = anime({
   duration: 2000,
   loop: false
 });
+
+var directionSkills = anime({
+  targets: '.direction-skills',
+  translateX: 100,
+  delay: anime.stagger(100, {direction: 'reverse'}),
+  autoplay: false,
+});
+
+var directionBonus = anime({
+  targets: '.direction-bonus',
+  translateX: 100,
+  delay: anime.stagger(200, {direction: 'reverse'}),
+  autoplay: false,
+});
+
+
+$(document).on('scroll', function(){
+  //console.log($(document).scrollTop());
+  if($(document).scrollTop() > 1700){
+    directionSkills.play();
+  }
+  if($(document).scrollTop() > 1800){
+    directionBonus.play();
+  }
+});
