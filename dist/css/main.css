@@ -143,6 +143,15 @@ h2.description-title {
   height: 500px;
   width: 100%; }
 
+.morphing-skills {
+  background-color: purple;
+  height: 100px;
+  position: relative; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
 body {
   font-family: 'Roboto', sans-serif;
   padding-top: 70px;
