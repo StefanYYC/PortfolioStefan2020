@@ -29,7 +29,7 @@ var animation_skills = bodymovin.loadAnimation({
     path: './dist/json/skills.json',
     renderer:'svg',
     autoplay: false,
-    loop: true,
+    loop: false,
     name: 'Icone dynamique'
 })
 
