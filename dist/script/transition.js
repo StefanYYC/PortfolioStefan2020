@@ -1,5 +1,5 @@
 setTimeout(function () {
- // $(document).scrollTop(0);
+  //$(document).scrollTop(0);
   $(".loader-wrapper").fadeOut("slow");
   $("body").css("overflow-y", "visible");
 }, 1500);

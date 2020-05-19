@@ -42,5 +42,6 @@ $(document).on('scroll', function(){
   }
   if($(document).scrollTop() > 1800){
     directionBonus.play();
+    $(document).unbind('scroll');
   }
 });
