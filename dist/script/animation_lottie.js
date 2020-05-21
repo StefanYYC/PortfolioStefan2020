@@ -37,7 +37,7 @@ var animation_skills = bodymovin.loadAnimation({
 // uniquement quand l'user a assez scroll
 $(document).on('scroll', function() {
     //console.log($(document).scrollTop()); // donne la valeur du scroll 
-     if($(document).scrollTop() > 1097 ){
+     if($(document).scrollTop() > 907 ){
          animation_books.play();
      }
      if($(document).scrollTop() > 1400){
