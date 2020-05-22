@@ -1,4 +1,7 @@
 @charset "UTF-8";
+#about {
+  padding-top: 70px; }
+
 .visibility-hidden {
   visibility: hidden; }
 
@@ -147,6 +150,12 @@ h2.description-title {
   background-color: purple;
   height: 100px;
   position: relative; }
+
+#competences {
+  padding-top: 70px; }
+
+#projets {
+  padding-top: 70px; }
 
 .img-projets {
   width: 70%; }
