@@ -34,14 +34,23 @@ var directionBonus = anime({
   autoplay: false,
 });
 
+var cardMiddle = anime({
+  targets: '.card-middle',
+  translateY: [-80,-40],
+  autoplay: false,
+});
 
+var flagscroll = true;
+var flagscroll2 = true;
 $(document).on('scroll', function(){
   //console.log($(document).scrollTop());
-  if($(document).scrollTop() > 1700){
+  if($(document).scrollTop() > 1700 && flagscroll == true){
+    flagscroll = false;
     directionSkills.play();
   }
-  if($(document).scrollTop() > 1800){
+  if($(document).scrollTop() > 1800 && flagscroll2 == true){
+    flagscroll2 = false;
     directionBonus.play();
-    $(document).unbind('scroll');
+   // $(document).unbind('scroll');
   }
 });
