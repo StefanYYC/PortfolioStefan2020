@@ -171,9 +171,26 @@ h2.description-title {
   padding-top: 25px;
   padding-bottom: 25px; }
 
+.card-custom:hover {
+  display: inline-block;
+  animation: bounce 1.2s linear;
+  animation-fill-mode: forwards; }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-60px); }
+  100% {
+    transform: translateY(-50px); } }
+
 * {
   margin: 0px;
   padding: 0px; }
+
+.stefan-title {
+  text-transform: uppercase;
+  padding-right: 200px !important; }
 
 body {
   font-family: 'Roboto', sans-serif;
