@@ -1,16 +1,16 @@
 @import "config";
 
-#about{
+#about {
   padding-top: 70px;
 }
 
-.visibility-hidden{
+.visibility-hidden {
   visibility: hidden;
 }
 .presentation {
   height: 100vh;
 }
-h2.sous-titre{
+h2.sous-titre {
   color: $bleufonce;
   font-weight: bold;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -25,6 +25,23 @@ h2.sous-titre{
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.list-presentation {
+  text-decoration: none;
+}
+
+.list-presentation {
+  list-style: none;
+  font-size: 30px;
+  margin-bottom: 210px;
+  margin-left: 10px;
+  
+}
+.li-presentation{
+  margin-bottom: 15px;
+}
+.li-presentation a{
+  color:$bleuclair;
+}
 @-webkit-keyframes focus-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -52,13 +69,13 @@ h2.sous-titre{
   }
 }
 
-.img-presentation{
+.img-presentation {
   height: 50%;
   width: 50%;
   border-radius: 70%;
 }
 
-.line-animation{
+.line-animation {
   width: 100%;
   margin: 20px;
   height: 5px;
@@ -79,8 +96,9 @@ h2.sous-titre{
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.68, 1, 0.68, 1);
   }
-  
 }
+
+
 
 @keyframes move {
   0% {
@@ -91,12 +109,12 @@ h2.sous-titre{
     left: 80%;
   }
 }
-.icon-wrap{
+.icon-wrap {
   position: relative;
   top: 90px;
 }
 
-.icon{
+.icon {
   margin: 20px;
   height: 50px;
 }
