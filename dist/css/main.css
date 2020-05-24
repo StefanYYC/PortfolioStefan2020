@@ -21,6 +21,21 @@ h2.sous-titre {
   -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
+.list-presentation {
+  text-decoration: none; }
+
+.list-presentation {
+  list-style: none;
+  font-size: 30px;
+  margin-bottom: 210px;
+  margin-left: 10px; }
+
+.li-presentation {
+  margin-bottom: 15px; }
+
+.li-presentation a {
+  color: #3AAFA9; }
+
 @-webkit-keyframes focus-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -130,9 +145,16 @@ h2.sous-titre {
     height: 0%; } }
 
 h2.description-title {
-  color: #DEF2F1;
+  color: #FEFFFF;
   font-size: 50px;
-  margin: 50px; }
+  margin: 50px;
+  text-transform: uppercase; }
+
+.description-text {
+  margin-left: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700; }
 
 #animation-0to100 {
   height: 400px;
@@ -154,6 +176,11 @@ h2.description-title {
 #competences {
   padding-top: 70px; }
 
+.title-competences {
+  font-size: 50px;
+  color: #DEF2F1;
+  text-transform: uppercase; }
+
 #projets {
   padding-top: 70px; }
 
@@ -165,7 +192,9 @@ h2.description-title {
 
 .title-projets {
   margin: 2em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #DEF2F1;
+  font-size: 50px; }
 
 #maubl-img {
   padding-top: 25px;
@@ -218,6 +247,11 @@ body {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
 
+h3 {
+  margin-bottom: 20px;
+  font-size: 42px;
+  color: #DEF2F1; }
+
 .fa-twitter:hover {
   color: #38A1F3; }
 
@@ -226,6 +260,9 @@ body {
 
 .fa-linkedin:hover {
   color: #2867B2; }
+
+.fa-github:hover {
+  color: black; }
 
 /* colors background */
 .color-grey1 {

@@ -1,5 +1,11 @@
-h2.description-title{
-    color: $bleublanc;
+h2.description-title {
+    color: $blancasse;
     font-size: 50px;
     margin: 50px;
+    text-transform: uppercase;
+}
+
+.description-text {
+    margin-left: 5px;
+    @include font-text;
 }
