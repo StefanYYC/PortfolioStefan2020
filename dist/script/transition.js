@@ -5,7 +5,7 @@ setTimeout(function () {
 }, 1500);
 
 setTimeout(function () {
-  $(".myNavbar").css("display", "flex");
+  $(".navbar").css("display", "flex");
   $(".title").css("display", "flex");
   $(".visibility-hidden").css("visibility", "visible");
 }, 1700);

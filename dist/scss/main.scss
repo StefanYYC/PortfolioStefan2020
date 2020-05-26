@@ -8,13 +8,13 @@
 @import 'responsive';
 
 html, body{
-  overflow: auto;
+  //overflow: auto;
   min-height: 100%;
 }
 
 .stefan-title{
   text-transform: uppercase;
-  padding-right: 200px !important;
+  margin-right: 200px !important;
 }
 
 body {
@@ -30,10 +30,8 @@ body {
   padding-bottom: 100px;
 }
 
-.myNavbar{
-  height: 80px;
+.navbar{
   display: none;
-  color:transparent;
   animation: fadeIn 1s ease-in both;
 }
 
