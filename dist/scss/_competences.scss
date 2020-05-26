@@ -7,3 +7,13 @@
     color: $bleublanc;
     text-transform: uppercase;
 }
+
+.ul-competences{
+    @include font-text;
+}
+
+.icon-skills{
+    height: 100px;
+    width: 100px;
+    margin: 2em;
+}

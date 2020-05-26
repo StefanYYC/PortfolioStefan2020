@@ -13,6 +13,13 @@ h2.sous-titre {
   font-weight: bold;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
+.title-about {
+  text-transform: uppercase;
+  margin: 1em 0 1em 0;
+  color: #DEF2F1;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif; }
+
 .title {
   text-transform: uppercase;
   font-size: 100px;
@@ -181,6 +188,16 @@ h2.description-title {
   color: #DEF2F1;
   text-transform: uppercase; }
 
+.ul-competences {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700; }
+
+.icon-skills {
+  height: 100px;
+  width: 100px;
+  margin: 2em; }
+
 #projets {
   padding-top: 70px; }
 
@@ -188,13 +205,23 @@ h2.description-title {
   width: 70%; }
 
 .link-projets {
-  color: #17252A; }
+  color: #17252A;
+  font-weight: bold;
+  font-family: 'Poppins',sans-serif; }
+
+.card-text {
+  font-family: 'Poppins',sans-serif;
+  font-size: 17px; }
 
 .title-projets {
-  margin: 2em;
   text-transform: uppercase;
+  margin-top: 1em;
   color: #DEF2F1;
-  font-size: 50px; }
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif; }
+
+#text-card {
+  margin-bottom: 3em; }
 
 #maubl-img {
   padding-top: 25px;
@@ -212,6 +239,10 @@ h2.description-title {
     transform: translateY(-60px); }
   100% {
     transform: translateY(-50px); } }
+
+#fairwaycorner {
+  color: #DEF2F1;
+  text-decoration: underline; }
 
 * {
   margin: 0px;
@@ -250,7 +281,8 @@ body {
 h3 {
   margin-bottom: 20px;
   font-size: 42px;
-  color: #DEF2F1; }
+  color: #DEF2F1;
+  font-family: 'Poppins', sans-serif; }
 
 .fa-twitter:hover {
   color: #38A1F3; }

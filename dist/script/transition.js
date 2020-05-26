@@ -10,8 +10,8 @@ setTimeout(function () {
   $(".visibility-hidden").css("visibility", "visible");
 }, 1700);
 
+// Gestion de la position active sur la navbar
 $(document).on("scroll", function () {
-
   if ($(document).scrollTop() < 900) {
     $('#home-nav').addClass("active");
     $('#about-nav').removeClass("active");
@@ -36,5 +36,4 @@ $(document).on("scroll", function () {
     $('#competences-nav').removeClass("active");
     $('#projets-nav').addClass("active")
   }
-
 });
