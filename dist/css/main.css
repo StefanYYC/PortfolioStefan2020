@@ -245,29 +245,37 @@ h2.description-title {
   text-decoration: underline; }
 
 @media screen and (max-width: 600px) {
-  #animation-loader, #animation-0to100, #animation-books, #animation-skills {
+  #animation-loader,
+  #animation-0to100,
+  #animation-books,
+  #animation-skills {
     display: none; }
-  html, body {
+  html,
+  body {
     overflow-x: hidden !important; }
-  .myNavbar {
-    height: 100px !important; }
+  .navbar {
+    display: flex; }
   .title {
     font-size: 80px;
     margin-top: 50px; }
   .title-competences {
     font-size: 45px; }
+  .title-projets {
+    font-size: 44px; }
   .direction-skills {
     transform: translateX(-25px) !important; }
   .direction-bonus {
-    transform: translateX(-25px) !important; } }
+    transform: translateX(-25px) !important; }
+  .stefan-title {
+    position: relative;
+    top: -35px; } }
 
 html, body {
-  overflow: auto;
   min-height: 100%; }
 
 .stefan-title {
   text-transform: uppercase;
-  padding-right: 200px !important; }
+  margin-right: 200px !important; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -280,10 +288,8 @@ body {
   height: auto;
   padding-bottom: 100px; }
 
-.myNavbar {
-  height: 80px;
+.navbar {
   display: none;
-  color: transparent;
   animation: fadeIn 1s ease-in both; }
 
 /* Pour la navbar qui arrive de haut en bas après le loading */
