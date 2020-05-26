@@ -1,0 +1,30 @@
+// Si le screen fait moins de 600px
+@media screen and (max-width: 600px){
+    #animation-loader, #animation-0to100, #animation-books, #animation-skills{
+        display: none;
+    }
+
+    html,body{
+        overflow-x: hidden !important;
+    }
+    .myNavbar{
+        height: 100px !important;
+    }
+
+    .title{
+        font-size: 80px;
+        margin-top: 50px;
+    }
+
+    .title-competences{
+        font-size: 45px;
+    }
+
+    .direction-skills{
+        transform: translateX(-25px) !important;
+    }
+    .direction-bonus{
+        transform: translateX(-25px) !important;
+    }
+    
+}

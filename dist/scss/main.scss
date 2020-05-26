@@ -5,10 +5,11 @@
 @import 'animation';
 @import 'competences';
 @import 'projets';
+@import 'responsive';
 
-*{
-  margin:0px;
-  padding:0px;
+html, body{
+  overflow: auto;
+  min-height: 100%;
 }
 
 .stefan-title{

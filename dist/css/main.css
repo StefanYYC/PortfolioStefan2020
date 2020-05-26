@@ -34,8 +34,8 @@ h2.sous-titre {
 .list-presentation {
   list-style: none;
   font-size: 30px;
-  margin-bottom: 210px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-bottom: 210px; }
 
 .li-presentation {
   margin-bottom: 15px; }
@@ -244,9 +244,26 @@ h2.description-title {
   color: #DEF2F1;
   text-decoration: underline; }
 
-* {
-  margin: 0px;
-  padding: 0px; }
+@media screen and (max-width: 600px) {
+  #animation-loader, #animation-0to100, #animation-books, #animation-skills {
+    display: none; }
+  html, body {
+    overflow-x: hidden !important; }
+  .myNavbar {
+    height: 100px !important; }
+  .title {
+    font-size: 80px;
+    margin-top: 50px; }
+  .title-competences {
+    font-size: 45px; }
+  .direction-skills {
+    transform: translateX(-25px) !important; }
+  .direction-bonus {
+    transform: translateX(-25px) !important; } }
+
+html, body {
+  overflow: auto;
+  min-height: 100%; }
 
 .stefan-title {
   text-transform: uppercase;
