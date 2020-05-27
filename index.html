@@ -64,6 +64,9 @@
                     <li class="nav-item projets" id="projets-nav">
                         <a class="nav-link link-custom" href="#projets">Projets</a>
                     </li>
+                    <li class="nav-item" id="projets-nav">
+                        <a class="nav-link link-custom" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
             <ul class="nav navbar-nav text-nowrap flex-row order-1 order-md-2">
@@ -319,11 +322,11 @@
     <!-- Fin thread -->
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <h5><i class="fas fa-pizza-slice"></i> STEFAN SPETER</h5>
+                    <h5><i class="fas fa-pizza-slice"></i>STEFAN SPETER</h5>
                     <div class="row">
                         <div class="col-6">
                             <ul class="list-unstyled">
@@ -353,17 +356,18 @@
                     <hr>
                 </div>
                 <div class="col-md-5">
-                    <form>
+                    <form method="POST" action="./dist/php/mail.php" onsubmit="return ValidateForm()" id="contact-form" name="contact-form">
                         <fieldset class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Entrez votre email">
+                            <input type="email" class="form-control" name="email" id="form_mail" placeholder="Entrez votre email">
                         </fieldset>
                         <fieldset class="form-group">
-                            <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                            <textarea class="form-control" name="message" id="form_message" type="text" placeholder="Message"></textarea>
                         </fieldset>
                         <fieldset class="form-group text-xs-right">
-                            <button type="button" class="btn btn-secondary-outline btn-lg">Envoyer</button>
+                            <a type="submit" class="btn btn-secondary-outline btn-lg" onclick="validateForm()">Envoyer</a>
                         </fieldset>
                     </form>
+                    <div class="status" id="status"></div>
                 </div>
             </div>
         </div>
@@ -371,16 +375,13 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="./dist/script/mail.js"></script>
     <script src="./dist/script/lottie.js"></script>
     <script src="./dist/script/animation_lottie.js"></script>
     <script src="./dist/script/anime.min.js"></script>
