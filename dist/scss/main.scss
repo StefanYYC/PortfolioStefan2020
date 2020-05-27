@@ -6,6 +6,7 @@
 @import 'competences';
 @import 'projets';
 @import 'responsive';
+@import 'footer';
 
 html, body{
   //overflow: auto;
@@ -34,6 +35,24 @@ body {
   display: none;
   animation: fadeIn 1s ease-in both;
 }
+
+li > a::after{
+  content: '';
+  display: block;
+  height: 1.5px;
+  background: $bleuclair;
+  transform: scaleX(0);
+  transition: transform .3s;
+}
+li > a:hover::after{
+  transform: scaleX(1);
+  transition: transform .3s;
+}
+
+.navbar-light .navbar-nav .active > .nav-link{
+  color: $bleuclair !important;
+}
+
 
  /* Pour la navbar qui arrive de haut en bas après le loading */
 
