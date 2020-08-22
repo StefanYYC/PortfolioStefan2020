@@ -41,7 +41,7 @@
     <!-- Animation loading page -->
     <div class="loader-wrapper">
         <div id="animation-loader"></div>
-        
+
     </div>
 
     <!-- wrap all the page -->
@@ -228,13 +228,13 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 class="title-projets" data-aos="fade-up">Projets professionnels</h2>
-                    <p class="description-text" id="text-card" data-aos="fade-up">En plus des projets que je vous
+                    <!-- <p class="description-text" id="text-card" data-aos="fade-up">En plus des projets que je vous
                         présente ci-dessous, je
                         développe en même temps
                         un site pour mon projet annuel de Bachelor et il est visitable ici: <a id="fairwaycorner"
                             target="_blank" href="http://www.stefanspeter.fr/fairwaycorner/index.html"
                             title="Site Fairway Corner">Fairway Corner</a>
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>
@@ -273,7 +273,9 @@
                 <div class="card card-custom px-2" data-aos="fade-down">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="./dist/img/maubl.png" class="img-projets" alt="maubl" id="maubl-img">
+                            <a href="http://maubl.fr/" target="_blank">
+                                <img src="./dist/img/maubl.png" class="img-projets" alt="maubl" id="maubl-img">
+                            </a>
                         </div>
                         <h5 class="card-title text-center py-2"><a href="http://maubl.fr/" id="link-maubl"
                                 target="_blank" class="link-projets">Maubl</a></h5>
@@ -338,16 +340,21 @@
                         </div>
                         <div class="col-6">
                             <ul class="list-unstyled">
-                                <li><a href="http://www.stefanspeter.fr/fairwaycorner/index.html">Fairway Corner</a></li>
+                                <li><a href="http://www.stefanspeter.fr/fairwaycorner/index.html">Fairway Corner</a>
+                                </li>
                                 <li><a href="./dist/img/cv_dev_web.pdf" download>Mon CV</a></li>
                             </ul>
                         </div>
                     </div>
                     <ul class="nav">
-                        <li class="nav-item"><a href="https://www.linkedin.com/in/stefan-speter-04623b155/" class="nav-link pl-0"><i class="fa fa-linkedin fa-lg"></i></a></li>
-                        <li class="nav-item"><a href="https://github.com/StefanYYC" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
-                        <li class="nav-item"><a href="https://gitlab.com/StefanHB" class="nav-link"><i class="fa fa-gitlab fa-lg"></i></a></li>
-                        <li class="nav-item"><a href="https://twitter.com/StefanSDev" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="https://www.linkedin.com/in/stefan-speter-04623b155/"
+                                class="nav-link pl-0"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="https://github.com/StefanYYC" class="nav-link"><i
+                                    class="fa fa-github fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="https://gitlab.com/StefanHB" class="nav-link"><i
+                                    class="fa fa-gitlab fa-lg"></i></a></li>
+                        <li class="nav-item"><a href="https://twitter.com/StefanSDev" class="nav-link"><i
+                                    class="fa fa-twitter fa-lg"></i></a></li>
                     </ul>
                     <br>
                 </div>
@@ -356,15 +363,19 @@
                     <hr>
                 </div>
                 <div class="col-md-5">
-                    <form method="POST" action="./dist/php/mail.php" onsubmit="return ValidateForm()" id="contact-form" name="contact-form">
+                    <form method="POST" action="./dist/php/mail.php" onsubmit="return ValidateForm()" id="contact-form"
+                        name="contact-form">
                         <fieldset class="form-group">
-                            <input type="email" class="form-control" name="email" id="form_mail" placeholder="Entrez votre email">
+                            <input type="email" class="form-control" name="email" id="form_mail"
+                                placeholder="Entrez votre email">
                         </fieldset>
                         <fieldset class="form-group">
-                            <textarea class="form-control" name="message" id="form_message" type="text" placeholder="Message"></textarea>
+                            <textarea class="form-control" name="message" id="form_message" type="text"
+                                placeholder="Message"></textarea>
                         </fieldset>
                         <fieldset class="form-group text-xs-right">
-                            <a type="submit" class="btn btn-secondary-outline btn-lg" onclick="validateForm()">Envoyer</a>
+                            <a type="submit" class="btn btn-secondary-outline btn-lg"
+                                onclick="validateForm()">Envoyer</a>
                         </fieldset>
                     </form>
                     <div class="status" id="status"></div>
